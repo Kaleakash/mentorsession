@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="storeEmployee" method="post">
+	<label>Id</label>
+	<input type="text" name="id"><br/>
+	<label>Id</label>
+	<input type="text" name="name"><br/>
+	<label>Id</label>
+	<input type="text" name="salary"><br/>
+	<label>Id</label>
+	<input type="text" name="desg"><br/>
+	<input type="submit" value="store record">
+	<input type="reset" value="reset">
+</form>
+</body>
+</html>

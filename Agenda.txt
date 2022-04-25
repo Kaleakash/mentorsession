@@ -1,0 +1,22 @@
+First Half Session with the below requirements: (9am-12pm)
+Creating the DB Schema
+Creating the Spring MVC Application with Hibernate integration:
+Starting from creating an Entity POJO class with Hibernate Mapping
+Next in bean file specifying the DataSource,  LocalSessionFactoryBean, HibernateTemplate beans
+Creating a Repository with Autowiring HibernateTemplate
+Creating a Service
+Creating an MVC Controller
+Designing the website with the below functionality:
+Form Designing
+Table functionality
+
+
+Phase 3 
+Spring MVC with ORM (Hibernate Integration) 
+
+HibernateTemplate 
+Explain Hibernate 
+Concept DU 
+JPA 
+Spring connection 
+JPA Relationship 

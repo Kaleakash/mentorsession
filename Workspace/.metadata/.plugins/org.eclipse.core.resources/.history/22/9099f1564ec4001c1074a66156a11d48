@@ -1,0 +1,32 @@
+package com.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class EmployeeController {
+
+	@Autowired					// pull the object from a container. 
+	EmployeeService employeeService;
+	
+	
+	@RequestMapping(value = "hello")
+	public ModelAndView sayHello() {
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("display.jsp");
+		System.out.println("I Came Here");
+		
+		/*
+		 * 
+		 * 
+		 * 
+		 * logic or coding 
+		 * 
+		 */
+		return mav;
+	}
+	
+	
+}

@@ -1,0 +1,24 @@
+package com.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.bean.Employee;
+import com.dao.EmployeeDao;
+
+@Service
+public class EmployeeService {
+
+	@Autowired
+	EmployeeDao employeeDao;
+	
+	public String storeEmployeeDetails(Employee emp) {
+		if(emp.getSalary()<12000) {
+			return "Salary must be > 120000";
+		}else if(employeeDao.storeEmployeeDetails(emp)>0) {
+			return "REcord stored";
+		}else {
+			"Record didn't store";
+		}
+	}
+}
