@@ -1,9 +1,18 @@
 package com.bean;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity						// Table name and entity class name must be same 
+@Table(name="EmployeeDetails")
 public class Employee {
+@Id
 private int id;
 private String name;
 private float salary;
+@Column(name="designation")
 private String desg;
 public int getId() {
 	return id;

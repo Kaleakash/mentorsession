@@ -1,5 +1,7 @@
 package com.service;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +14,7 @@ public class EmployeeService {
 	@Autowired
 	EmployeeDao employeeDao;
 	
+
 	public String storeEmployeeDetails(Employee emp) {
 		if(emp.getSalary()<12000) {
 			return "Salary must be > 12000";
